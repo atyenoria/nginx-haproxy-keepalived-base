@@ -44,7 +44,7 @@ RUN buildDeps='curl gcc libc6-dev libpcre3-dev libssl-dev make' \
 
 
 
-RUN apt-get update && apt-get install -y software-properties-common build-essential zsh git vim dnsutils
+RUN apt-get update && apt-get install -y software-properties-common build-essential zsh git vim dnsutils  wget curl
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /root/.oh-my-zsh && \
     cp -R /root/.oh-my-zsh /laravel && \
     chsh -s /bin/zsh
